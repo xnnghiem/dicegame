@@ -1,0 +1,36 @@
+<!-- Xuan Nghiem Javascript Week 7 lab 4/4/2021 -->
+<!-- This is a game of rolling two dice, the larger sums wins
+    the game will end once one player reaches 100 points
+    points are doubled for the winner who rolled matching dies-->
+<html>
+<head>
+  <title>Roll 2 dice. Dice game.</title>
+  <center>
+    <h1>Click button to roll 2 dice or click exit to quit game anytime.</h1>
+  </center>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- links main.js and function rollDice
+  roll two dice and the system 2 dice, endGame() forces the game to end-->
+  <script type = "text/javascript" src="js/main.js"></script>
+  <center>
+    Click to roll 2 dice: <button onclick = 'rollDice()'>Roll</button></br>
+    Click to end game: <button onclick = 'endGame()'>End</button></br>
+    <!-- Play's scoreboard and two dice -->
+    <div>Player's Score: <text id = 'playerScore'>0</text></div>
+    <div id = 'die1' class = 'dice'>0</div>
+    <div id = 'die2' class = 'dice'>0</div>
+    Sum: <div id = 'playerSum'>0</div>
+  </br></br>
+  <!-- System's scoreboard and two dice -->
+  <div>System's score: <text id = 'systemScore'>0</text></div>
+  <div id = 'die3' class = 'dice'>0</div>
+  <div id = 'die4' class = 'dice'>0</div>
+  Sum: <div id = 'systemSum'>0</div>
+</br></br>
+<p id='summary'></p>
+<div id = 'status'></div>
+</center>
+</body>
+</html>
