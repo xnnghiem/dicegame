@@ -1,2 +1,0 @@
-# dicegame
-JS example
